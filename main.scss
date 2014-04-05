@@ -75,7 +75,8 @@ body {
 
 // default image styles
 .img {
-	padding: 1em 0;
+	padding: 1rem 1rem;
+
 }
 .main-img-container,
 .sub-img-container {
@@ -86,19 +87,16 @@ body {
 // images served on lrg screen size
 .main-med-img,
 .sub-sml-img-lrgscreen {
-	padding: 1rem 1rem;
 }
 
 // images served on the med screen size
-.main-med-img {
+.main-med-img,
+.main-sml-img {
 	display: none;
 }
 
 .sub-sml-img-medscreen {
 	display: none;
-}
-
-.sml-img {
 }
 
 .sub-sml-img-medscreen {

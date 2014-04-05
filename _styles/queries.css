@@ -7,11 +7,17 @@
 		display: inline-block;
 	}
 	nav .main-nav {
-		padding: 1em !important;
+		padding: 1em;
 	}
 	.main-content,
 	.sub-content {
 		font-size: 1.25rem;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+	section .main-content {
+		padding-bottom: 1rem;
 	}
 	.sub-sml-img-lrgscreen {
 		display: none;
@@ -21,19 +27,56 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
-	.main-nav a {
+@media screen and (max-width: 632px) {
+	nav .main-nav .nav-item {
+		padding: 1.2rem;
 		display: block;
-		padding: 1em;
 	}
+	nav .main-nav .nav-item a {
+		font-size: 1.5rem;
+	}
+
+	nav .main-nav .nav-item a:hover {
+	
+	}
+
 	.main-content,
 	.sub-content {
 		font-size: 1.5rem;
 	}
+	p.main-content,
 	p.sub-content {
 		width: 100%;
-		background-color: rgba(100,100,100,0.2);
+		background-color: rgba(100,100,100,0.1);
 		border-radius: 6px;
-		padding: .8rem;
+		padding: 1rem;
 	}
-}
+	img.main-med-img {
+		display: none;
+	}
+	img.main-sml-img {
+		display: inline-block;
+	}
+	img.sub-sml-img-medscreen {
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+	}
+
+
+
+
+/*Styles that need to be overridden: 
+	a {
+		text-decoration: none;
+		padding: 0 1rem;	
+		color: white;	
+		font-size: 1.2rem;
+		&:hover {
+			background-color: $pumpkin;
+			color: white;
+			text-shadow: 0 0 5px rgba(0,0,0,0.5);
+			padding: 1rem;
+		}*
+
+		/;
