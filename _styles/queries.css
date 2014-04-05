@@ -6,8 +6,12 @@
 	img.main-med-img {
 		display: inline-block;
 	}
-	nav .main-nav {
+	nav .main-nav,
+	nav .main-nav a {
 		padding: 1em;
+	}
+	nav .main-nav a:hover {
+		padding: 1rem 1.2rem;
 	}
 	.main-content,
 	.sub-content {
@@ -25,6 +29,15 @@
 	img.sub-sml-img-medscreen {
 		display: inline-block;
 	}
+	p.main-content,
+	p.sub-content {
+		width: 80%;
+		border-radius: 4px;
+		padding: 1rem;
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 632px) {
@@ -40,7 +53,7 @@
 	}
 	
 	.main-nav a:hover {
-	padding: 1rem 1.2rem;		
+		padding: 1rem 1.2rem;		
 	}
 
 	.main-content,
@@ -63,23 +76,5 @@
 	img.sub-sml-img-medscreen {
 		display: block;
 		width: 200px;
-		margin: 0 auto;
+		margin: 1rem auto;
 	}
-
-
-
-
-/*Styles that need to be overridden: 
-	a {
-		text-decoration: none;
-		padding: 0 1rem;	
-		color: white;	
-		font-size: 1.2rem;
-		&:hover {
-			background-color: $pumpkin;
-			color: white;
-			text-shadow: 0 0 5px rgba(0,0,0,0.5);
-			padding: 1rem;
-		}*
-
-		/;

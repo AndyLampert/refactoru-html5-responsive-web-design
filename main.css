@@ -68,13 +68,20 @@ body {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.main-content,
-.sub-content {
-  padding: 0 1rem;
-}
-
 .img {
   padding: 1rem 1rem;
+}
+
+.sub-sml-img-medscreen {
+  display: none;
+}
+
+.sub-sml-img-medscreen {
+  padding: .5rem;
+}
+
+.sub-img-container-med {
+  text-align: center;
 }
 
 .main-img-container,
@@ -92,14 +99,10 @@ body {
   display: none;
 }
 
-.sub-sml-img-medscreen {
-  display: none;
+.col-1-2-left {
+  padding-right: 1rem;
 }
 
-.sub-sml-img-medscreen {
-  padding: .5rem;
-}
-
-.sub-img-container-med {
-  text-align: center;
+.col-1-2-right {
+  padding-left: 1rem;
 }

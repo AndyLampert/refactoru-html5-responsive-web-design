@@ -66,33 +66,9 @@ body {
 	}
 }
 
-.main-content,
-.sub-content {
-	padding: 0 1rem;
-}
-
-
 // default image styles
 .img {
 	padding: 1rem 1rem;
-
-}
-.main-img-container,
-.sub-img-container {
-	text-align: center;
-	padding: 0;
-}
-
-// images served on lrg screen size
-.main-lrg-img {
-	padding: 1rem 0;
-}
-
-
-// images served on the med screen size
-.main-med-img,
-.main-sml-img {
-	display: none;
 }
 
 .sub-sml-img-medscreen {
@@ -106,6 +82,32 @@ body {
 .sub-img-container-med {
 	text-align: center;
 }
+
+.main-img-container,
+.sub-img-container {
+	text-align: center;
+	padding: 0;
+}
+
+// images served on lrg screen size
+.main-lrg-img {
+	padding: 1rem 0;
+}
+
+// images served on the med screen size
+.main-med-img,
+.main-sml-img {
+	display: none;
+}
+
+.col-1-2-left {
+	padding-right: 1rem;
+}
+
+.col-1-2-right {
+	padding-left: 1rem;
+}
+
 
 // load all the 3 scales of pictures
 // then hide and show different ones for media queries
