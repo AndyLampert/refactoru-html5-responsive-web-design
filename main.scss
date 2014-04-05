@@ -1,0 +1,114 @@
+// nav bar and content are centered and max-width 960px
+// inline nav links
+
+// Extra credit - get the background image moving
+
+// Use border-box
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+// Color styles
+$carrot: #e67e22;
+$pumpkin: #d35400;
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(_images/strange_bullseyes.png);
+	animation: fluid-bg 1s infinite; /* IE 10+ */
+	-webkit-animation: fluid-bg 1s infinite; /* IE 10+ */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+@keyframes fluid-bg {
+	0%   { background-position: 0 0; }
+	100% { background-position: 10% 0; }
+}
+
+@-webkit-keyframes fluid-bg {
+	0%   { background-position: 0 0; }
+	100% { background-position: 10% 0; }
+}
+
+.main-nav {
+	list-style-type: none;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	background-color: $carrot;
+	padding: 1rem;
+	.nav-item {
+		display: inline;
+		color: #fff;
+		width: 100%;
+	}
+	a {
+		text-decoration: none;
+		padding: 1rem 1rem;	
+		color: white;	
+		font-size: 1.2rem;
+		&:hover {
+			background-color: $pumpkin;
+			color: white;
+			text-shadow: 0 0 5px rgba(0,0,0,0.5);
+		}
+	}
+}
+
+.main-content,
+.sub-content {
+	padding: 0 1rem;
+}
+
+
+// default image styles
+.img {
+	padding: 1em 0;
+}
+.main-img-container,
+.sub-img-container {
+	text-align: center;
+	padding: 0;
+}
+
+// images served on lrg screen size
+.main-med-img,
+.sub-sml-img-lrgscreen {
+	padding: 1rem 1rem;
+}
+
+// images served on the med screen size
+.main-med-img {
+	display: none;
+}
+
+.sub-sml-img-medscreen {
+	display: none;
+}
+
+.sml-img {
+}
+
+// load all the 3 scales of pictures
+// then hide and show different ones for media queries
+// or just set a max-width: on the large image
+// class mobile-img, tablet-img, desktop-img
+// if less than / more than something, display: block
+// if not, display: none;
+
+// Import styles
+// Import custom grid
+@import "_styles/grid.css";
+// Responsive Styles
+@import "_styles/queries.css";
+
+

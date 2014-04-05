@@ -1,0 +1,39 @@
+/*Desktop*/
+@media screen and (max-width: 960px) {
+	.main-lrg-img {
+		display: none;
+	}
+	img.main-med-img {
+		display: inline-block;
+	}
+	.main-nav {
+		padding: 1em;
+	}
+	.main-content,
+	.sub-content {
+		font-size: 1.25rem;
+	}
+	.sub-sml-img-lrgscreen {
+		display: none;
+	}
+	img.sub-sml-img-medscreen {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.main-nav a {
+		display: block;
+		padding: 1em;
+	}
+	.main-content,
+	.sub-content {
+		font-size: 1.5rem;
+	}
+	p.sub-content {
+		width: 100%;
+		background-color: rgba(100,100,100,0.2);
+		border-radius: 6px;
+		padding: .8rem;
+	}
+}
