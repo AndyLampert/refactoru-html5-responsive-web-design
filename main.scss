@@ -3,15 +3,17 @@
 
 // Extra credit - get the background image moving
 
-// Use border-box
-*, *:before, *:after {
-	box-sizing: border-box;
-}
 
 // Color styles
 $carrot: #e67e22;
 $pumpkin: #d35400;
 
+// Use border-box
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+// Simple reset (also have normalizr running)
 html {
 	margin: 0;
 	padding: 0;
@@ -45,7 +47,7 @@ body {
 	width: 100%;
 	text-align: center;
 	background-color: $carrot;
-	padding: 1rem;
+	padding: .3rem;
 	.nav-item {
 		display: inline;
 		color: #fff;
@@ -53,13 +55,14 @@ body {
 	}
 	a {
 		text-decoration: none;
-		padding: 1rem 1rem;	
+		padding: 0 1rem;	
 		color: white;	
 		font-size: 1.2rem;
 		&:hover {
 			background-color: $pumpkin;
 			color: white;
 			text-shadow: 0 0 5px rgba(0,0,0,0.5);
+			padding: 1rem;
 		}
 	}
 }
@@ -96,6 +99,14 @@ body {
 }
 
 .sml-img {
+}
+
+.sub-sml-img-medscreen {
+	padding: .5rem;
+}
+
+.sub-img-container-med {
+	text-align: center;
 }
 
 // load all the 3 scales of pictures

@@ -6,8 +6,8 @@
 	img.main-med-img {
 		display: inline-block;
 	}
-	.main-nav {
-		padding: 1em;
+	nav .main-nav {
+		padding: 1em !important;
 	}
 	.main-content,
 	.sub-content {
