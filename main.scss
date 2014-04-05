@@ -55,14 +55,13 @@ body {
 	}
 	a {
 		text-decoration: none;
-		padding: 0 1rem;	
+		padding: .3rem 1.2rem;	
 		color: white;	
 		font-size: 1.2rem;
 		&:hover {
 			background-color: $pumpkin;
 			color: white;
 			text-shadow: 0 0 5px rgba(0,0,0,0.5);
-			padding: 1rem;
 		}
 	}
 }
@@ -85,9 +84,10 @@ body {
 }
 
 // images served on lrg screen size
-.main-med-img,
-.sub-sml-img-lrgscreen {
+.main-lrg-img {
+	padding: 1rem 0;
 }
+
 
 // images served on the med screen size
 .main-med-img,

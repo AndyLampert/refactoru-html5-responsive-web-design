@@ -37,7 +37,10 @@
 	}
 
 	nav .main-nav .nav-item a:hover {
+	}
 	
+	.main-nav a:hover {
+	padding: 1rem 1.2rem;		
 	}
 
 	.main-content,
